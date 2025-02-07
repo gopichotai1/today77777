@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+<title></title>
+    <meta charset="UTF-8">
+    <title>  </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<center>
+<table>
+	<h2>Account</h2>
+    <table>
+        
+        {% for user in users %}
+        <tr><td>Firstname</td>
+            <td>{{ user[1] }}</td>
+			<td><a href="{{ url_for('update') }}" >Update</a> </td>
+			</tr><tr>
+			<td>Lastname</td>
+            <td>{{ user[2] }}</td>
+			<td><a href="{{ url_for('update') }} "  >Update</a> </td>
+			</tr><tr>
+			<td>Email</td>			
+            <td>{{ user[3] }}</td>
+			</tr><tr>
+			<td>Phone number</td>
+			<td>{{ user[4] }}</td>
+			<td> <a href="{{ url_for('update') }}"  >Update</a> </td>
+			</tr><tr>
+			
+			<td>Age</td>
+            <td>{{ user[5] }}</td>
+			</tr><tr>
+			<td>Genger</td>
+			<td>{{ user[6] }}</td>
+			</tr><tr>
+			<td>Security Question</td>
+            <td>{{ user[7] }}</td>
+			</tr><tr>
+			<td>Ans</td>
+            <td>{{ user[8] }}</td>
+			</tr><tr>
+			<td>You created Account on</td>
+            <td>{{ user[9] }}</td>
+			
+			</tr><tr>
+			<td>Profile_image</td>
+            <td>{{ user[10] }}</td>
+			</tr><tr>
+			
+           
+        </tr>
+        {% endfor %}
+	
+</table>
+</center>
+</div>
+
+</body>
+</html>

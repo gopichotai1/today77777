@@ -1,0 +1,441 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+body{height: 900px;}
+.header {
+	
+	text-align: center;
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	overflow: hidden;
+	border-radius: 0 0 85% 85% / 30%;
+}
+.header .overlay{
+	width: 100%;
+	height: 10%;
+	padding: 5px;
+	color: #FFF;
+	text-shadow: 2px 2px 1px #333;
+  background-image: linear-gradient( 135deg, #9f05ff69 10%, #fd5e086b 100%);
+	
+}
+#menu-content{
+	text-shadow: 0px 0px 0px #333;
+}
+
+h1 {
+	font-family: 'Dancing Script', cursive;
+	font-size: 60px;
+	display: inline-block;
+  	margin-bottom: -20px;
+	
+	
+}
+
+h3, p {
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 0px;
+}
+
+input[type="submit"],#Search{
+	background-image: url('login.png');
+	display: inline-block;
+  	margin: 1000px;
+	border: none;
+	outline: none;
+	padding: 20px 20px;
+	border-radius: 50px;
+	color: black;
+	background: #fff;
+	margin-right: 20px;
+	margin-top: 0px;
+	margin-bottom: 3px;
+	box-shadow: 10px 10px 10px 0 #0000ff3b;
+	font-family: 'Dancing Script', cursive;
+	font-size:1.0em;
+	cursor:pointer;
+}
+
+#Search{
+	margin: 30px;	
+	padding: 10px 20px;
+	background:linear-gradient(to right,rgb(254,213,220),#fff,rgb(254,213,220));
+}
+#user{
+padding: 10px 20px;
+
+}
+
+button:hover{
+	cursor: pointer;
+}
+
+footer{
+	
+       background-color: #333;
+       color: white;
+       text-align: center;
+       padding: 3px 0;
+       position: fixed;
+       height: auto;
+       width: 100%;
+       bottom: 0;
+       background-image: linear-gradient( 135deg, #9f05ff69 10%, #fd5e086b 100%);
+}
+
+a:link{
+	color:black;
+}
+
+a:visited{
+	color: black;
+}
+
+a {
+       color: #4CAF50;
+       font-family: 'Dancing Script', cursive;
+       font-size: 90px;
+       font-size:1.0em;
+       padding: 70px;
+       text-decoration: none;
+ 
+}
+
+a:hover {
+       text-decoration: underline;
+}
+
+input[type="text"]{
+     
+    width: 30%;
+    padding: 10px;
+    margin: 0px;
+    border: 3px solid #ccc;
+    border-radius: 50px;
+
+}
+
+#comment{
+	width: 30%;
+    padding: 5px;
+    margin-left: -80px;
+    border: 3px solid #ccc;
+    border-radius: 50px;
+}
+
+	header {
+            font-family: Arial, sans-serif;
+        }
+        .menu {
+            position: relative;
+            display: inline-block;
+        }
+        .menu-button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 40px;
+			
+        }
+        .menu-content {
+            display: none;
+            position: absolute;
+            right: 100;
+			margin-top:0px;
+            background-color: white;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+			margin-left:-50px;
+			
+        }
+        .menu-content a {
+            color: black;
+            padding: 0px 10px;
+            text-decoration: none;
+            display: block;
+			
+			
+        }
+        .menu-content a:hover {
+            background-color: #ddd;
+        }
+        .header:hover .menu-content {
+            display: block;
+        }
+		
+		
+
+		
+.your_account{
+	padding-top:10px;
+	color: #4CAF50;
+	padding: 0px 10px;
+    font-size:1.5em;  
+    text-decoration: none;
+	margin-top:40px;
+}
+
+#logout{
+	
+	font-size:1.0em;  
+	margin-left: 60px;	
+	padding: 10px 50px;
+	background:linear-gradient(to right,rgb(254,213,220),#fff,rgb(254,213,220));
+}
+#image,#image_submit{
+	box-shadow: 0px 0px 0px 0 #0000ff3b;
+	margin-top: 60px;
+	margin-right:280px;
+	margin-left: 20px;
+	background:linear-gradient(to right,rgb(254,213,220),#fff,rgb(254,213,220));
+	padding: 40px 50px;
+}
+#image_submit{
+	display:inline-block;
+	padding: 10px 20px;
+	margin-top:40px;
+	margin-right:-120px;
+	font-family: 'Dancing Script', cursive;
+}
+#myfile{
+	display:inline-block;
+	margin-top:40px;
+	margin-right:100px;
+}
+h2{
+	font-family: 'Dancing Script', cursive;
+	font-size: 2.3em;
+}
+label {
+    display: inline-block;
+    margin-top: 40px;
+    font-family: 'Dancing Script', cursive;
+	margin-right: 230px;
+	font-size:20px;
+}
+#vname,#vcategory{
+	width: 20%;
+	
+    padding: 10px;
+    margin-right:90px;
+    border: 3px solid #ccc;
+    border-radius: 50px;	
+}
+
+.hidden,#s ,#save{
+    display: none;
+}
+
+#textbox {
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 16px;
+}
+#showTextboxButton,#showlikeButton{
+	
+	display:inline-block;
+  	margin-left: -380px;
+	border: none;
+	outline: none;
+	padding: 10px 20px;
+	height:50px;
+	width:50px;
+	border-radius: 50px;
+	color: black;
+	
+	background-image: url('comment.jfif'); 
+	background-size: cover;
+	width: 70px; 
+	height:60px;
+	
+}
+#showlikeButton,#save{
+	display:inline-block;
+	background-image: url('like2.jfif'); 
+	background-size: cover;
+	
+	height:50px;
+	width:50px;
+	margin:-70px;
+	
+}
+#save_btn{
+
+	background-image: url('save.png'); 
+	background-size: cover;
+	height:50px;
+	width:50px;
+	margin-right:10px;
+	margin-top:10px;
+	
+}
+.background-link {
+    display: inline-block;
+    width: 10px;
+    height: 20px;
+    background-image: url('home.png');
+    background-size: cover;
+	margin-left: 10px;
+    padding: 20px 20px;
+    border: none; /* Removes default link styling */
+    text-decoration: none; /* Removes underline */
+}
+#shorts{
+	 background-size: cover;
+	padding: 35px 20px;
+	margin-left: 100px;
+	margin-top:-20px;
+
+	width: 100px;
+	background-image: url('video.png');
+	border:none;
+}
+#add{
+	background-size: cover;
+	padding: 10px 20px;
+	margin-right: 100px;
+	margin-top: -10px;
+	height:40px;
+	width: 40px;
+	background-image: url('add.png');
+	border:none;
+}
+
+#user{
+	background-size: cover;
+	padding: 10px 20px;
+	margin-left: 100px;
+	margin-top: -10px;
+	height:40px;
+	width: 40px;
+	background-image: url('user.png');
+	border:none;
+}
+#Search{
+	background-size: cover;
+	padding: 10px 20px;
+	margin-right: 1300px;
+	margin-top: 10px;
+	height:40px;
+	width: 40px;
+	background-image: url('search.png');
+	border:none;
+}
+
+.background-link:hover {
+    opacity: 0.8; /* Optional: Adds a hover effect */
+}
+.radiobtn{
+	margin:10px;
+}
+
+}
+
+#category{
+    width: 20%;
+    padding: 5px;
+    margin: 1000px;
+    border: 3px solid #ccc;
+    border-radius: 50px;
+}
+#ctg{
+	margin:10px;
+	margin-top:50px;
+}
+#video_submit{
+	box-shadow: 0px 0px 0px 0 #0000ff3b;
+	margin-top: 60px;
+	margin-right:380px;
+	margin-left: 20px;
+	background:linear-gradient(to right,rgb(254,213,220),#fff,rgb(254,213,220));
+	padding: 10px 20px;
+}
+
+input:focus {
+  border: 4px solid pink;
+ 
+}
+#name{
+	margin-left: 1200px;
+	color: whitesmoke;
+}
+
+#video_upload{
+	margin-left: -500px;
+	margin-top: 50px;
+
+}
+#file{
+	margin-left: -10px;
+}
+#username{
+	margin-left: -180px;
+
+}
+#card-body{
+	margin-top: 170px;
+}
+#card-title{
+	font-family: 'Dancing Script', cursive ;
+	margin-right: -500px;
+}
+#card-text{
+	font-family: 'Dancing Script', cursive;
+	margin-right: 500px;
+}
+#card{
+	margin-top:-150px;
+}
+#update{
+
+	
+  	margin: 10px;
+	border: none;
+	outline: none;
+	padding: 5px 10px;
+	border-radius: 50px;
+	color: black;
+	background: #fff;
+	margin-right: 20px;
+	margin-top: 0px;
+	margin-bottom: 3px;
+	box-shadow: 10px 10px 10px 0 #0000ff3b;
+	font-family: 'Dancing Script', cursive;
+	font-size:1.0em;
+	cursor:pointer;
+		
+	background:linear-gradient(to right,rgb(254,213,220),#fff,rgb(254,213,220));
+}
+table {
+	
+	margin-top: 20px;
+	font-family: 'Dancing Script', cursive;/* Ensures the borders don't show up in other ways */
+	border: none;
+	font-size:1.30em;
+}
+
+th, td {
+ 
+  border: none;
+}
+a:link{
+color:blue;
+}
+
+a:visited{
+color: purple;
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+

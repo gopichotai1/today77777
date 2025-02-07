@@ -1,0 +1,29 @@
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles_form_register.css') }}">
+</head>
+<body>
+    <div class="container">
+	
+    <form method="post" action="">
+    <h1>Login Form</h1>
+	
+	
+	
+	<label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Email" required>
+	
+	<label for="Username">Password</label>
+    <input type="password" id="password" name="password" placeholder="Password" required>
+	{% if error %}
+        <p style="color:red;">{{ error }}</p>
+    	{% endif %}
+    <input type="submit" value="submit" title="submit" />
+    
+
+	<p>you are not registered? <a href="{{ url_for('register') }}">register here</a></p>
+	<p>Forgot password? <a href="{{ url_for('forgot_password') }}">click here</a></p>
+</form>
+</body>
+</html>

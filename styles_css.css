@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    background:linear-gradient(to right,rgb(254,213,220),#fff,rgb(254,213,220));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    background:white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(1, 0, 0, 1);
+    width: 400px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+
+
+button {
+    width: 50%;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    float: center;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+   
+}
+
+header {
+padding: 60px;
+text-align: center;
+background: #1abc9c;
+color: white;
+font-size: 30px;
+}
+
+a:link{
+color:blue;
+}
+
+a:visited{
+color: purple;
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+.logo {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-items a{
+    color: white;
+    text-decoration: none;
+    margin: 0 30px;
+}
+
+.pages a{
+    color: white;
+    text-decoration: none;
+    margin: 0 50px;
+}
+
+.intro {
+    padding: 20px;
+    text-align: center;
+}
+
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+button {
+	border: none;
+	outline: none;
+	padding: 10px 20px;
+	border-radius: 50px;
+	color: #333;
+	background: #0000003b;
+	margin-bottom: 50px;
+	box-shadow: 0 20px 30px 0 #0000003b;
+}
+button:hover{
+	cursor: pointer;
+	background-color: pink;
+}
+input:focus {
+  border: 4px solid pink;
+ 
+}
+
+
+

@@ -1,0 +1,27 @@
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles_form_register.css') }}">
+</head>
+<body>
+    <div class="container">
+    <form method="post" action="">
+    <h1>Forgot Password</h1>
+   
+   <label for="security question">Security Question:</label>
+			<select name="security question" id="security_question">
+            <option value="your favourite color?">your favourite color?</option>
+            <option value="your favourite food?">your favourite food?</option>
+            <option value="your favourite moovie?">your favourite moovie?</option>
+            <option value="what is your nick name?">what is your nick name?</option>
+            </select><br>
+			
+			<input type="text" id="ans" name="ans" placeholder="Answer" required>
+    <p class="form-actions">
+	<a href="{{ url_for('forgotpass_3') }}">
+    <input type="submit"  value="Next" name="next" /></a>
+    </p>
+
+</form>
+</body>
+</html>

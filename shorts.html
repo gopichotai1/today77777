@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <div class="mt-4">
+            {% for video in videos %}
+                <div class="card_mb-3" id="card">
+                    <div class="card-body" id="card-body">
+                        <h5 class="card-title" id="card-title">Title: {{ video[1] }}</h5>
+                        <p class="card-text" id="card-text">Uploaded by: {{ video[3] }}</p>
+                        <p class="card-text" id="card-text">Uploaded on: {{ video[2] }}</p>
+                        <video width="800" height="500" controls>
+                            <source src="{{ url_for('static', filename='uploads/' + video[1]) }}" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video><br>
+                        <button id="showTextboxButton"> </button>
+						<button id="save_btn"> &nbsp&nbsp&nbsp&nbsp </button>
+						<form action="{{ url_for('like_video', video_id=video[0]) }}" method="POST">
+						
+						<button id="showlikeButton" onclick="handleClick()"> <p><h5>&nbsp {{ video[5] }}</h5>
+						
+						<script>
+						function handleClick() {
+						// Disable the button after the first click
+						document.getElementById('showlikeButton').disabled = true;
+						 document.getElementById('showlikeButton').innerHTML = "Disabled";
+
+						}
+						</script>
+						
+						</p> &nbsp&nbsp</form></button>
+						<br><br>
+						<input type="text" id="textbox" class="hidden" placeholder="Enter text here...">
+						
+						
+						<!--like-->
+						<button id="s"></button><br>
+                         
+                    </div>
+					
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
